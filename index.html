@@ -2,15 +2,15 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Chrystal Collector Game</title>
+    <title>Crystal Collector Game</title>
 
     <!--Linking to all the style sheets that I will be using  -->
 
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/bootstrap copy.css">
     <link rel="stylesheet" href="./assets/css/style.css">
-
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
   </head>
 
@@ -20,7 +20,7 @@
 
 <header>
   <div class="alert alert-primary" role="alert">
-    <h1>Chrystal Collector</h1>
+    <h1>Crystal Collector</h1>
   </div>
 </header>
 
@@ -30,15 +30,15 @@
     <div class="card">
       <div class="card-body">
           <p>You will be given a random number at the start of the game</p>
-          <p>There are four chrystals below. By clicking on a chrystal, you will be add a specific amount of points to your total score.</p>
+          <p>There are four crystals below. By clicking on a crystal, you will be add a specific amount of points to your total score.</p>
           <p>You win the game by matching your total score to the number. Just like blackjack or The Price is Right, you will lose if your score is above the number.</p>
-          <p>You will not know the value of the chrystal until you click on it...and they will change with each game.</p>
+          <p>You will not know the value of the crystal until you click on it...and they will change with each game.</p>
           <p>Best of luck!</p>
       </div>
     </div>
   </div>
 </div>
-<!-- Display four chrystals on the screen that will be selectable by the user-->
+<!-- Display four crystals on the screen that will be selectable by the user-->
 <div class="container">
 
 <!-- Display the number of wins and losses -->
@@ -79,33 +79,33 @@
 
 </div>
 
-<!-- Row for the chrystals -->
+<!-- Row for the crystals -->
 
   <div class="row">
 
-<!-- Chrystal 1 -->
+<!-- crystal 1 -->
 
-    <div class="col-lg-3 col-md-3 col-sm-3 col-3 chrystal chrystal-1">
+    <button type="button" class="btn col-lg-3 col-md-3 col-sm-3 col-3 crystal crystal-1" id="button1">
       <img src="./assets/images/Diamond_1.png" class="rounded float-left" alt="Diamond 1" width = 25%>
-    </div>
+    </button>
 
-<!-- Chrystal 2 -->
+<!-- crystal 2 -->
 
-    <div class="col-lg-3 col-md-3 col-sm-3 col-3 chrystal chrystal-1">
-      <img src="./assets/images/Diamond_2.png" class="rounded float-left" alt="Diamond 2" width = 25%>
-    </div>
+  <button type="button" class="btn col-lg-3 col-md-3 col-sm-3 col-3 crystal crystal-2" id="button2">
+    <img src="./assets/images/Diamond_2.png" class="rounded float-left" alt="Diamond 2" width = 25%>
+  </button>
 
-<!-- Chrystal 3 -->
+<!-- crystal 3 -->
 
-    <div class="col-lg-3 col-md-3 col-sm-3 col-3 chrystal chrystal-1">
-      <img src="./assets/images/Diamond_3.png" class="rounded float-left" alt="Diamond 3" width= 25%>
-    </div>
+  <button type="button" class="btn col-lg-3 col-md-3 col-sm-3 col-3 crystal crystal-3" id="button3">
+    <img src="./assets/images/Diamond_3.png" class="rounded float-left" alt="Diamond 3" width = 25%>
+  </button>
 
-<!-- Chrystal 4 -->
+<!-- crystal 4 -->
 
-    <div class="col-lg-3 col-md-3 col-sm-3 col-3 chrystal chrystal-1">
+    <button type="button" class="btn col-lg-3 col-md-3 col-sm-3 col-3 crystal crystal-4" id="button4">
       <img src="./assets/images/Diamond_4.png" class="rounded float-left" alt="Diamond 4" width = 25%>
-    </div>
+    </button>
 
 
   </div>
