@@ -1,8 +1,8 @@
-// Create variables for the chrystals, wins, score to beat, losses, and your scoreToBeat
-var Chrystal_1;
-var Chrystal_2;
-var Chrystal_3;
-var Chrystal_4;
+// Create variables for the cookies, wins, score to beat, losses, and your scoreToBeat
+var cookie_1;
+var cookie_2;
+var cookie_3;
+var cookie_4;
 var wins = 0;
 var losses = 0;
 var scoreToBeat;
@@ -20,16 +20,16 @@ $(document).ready(function(){
 
 
 function initialGame() {
-  scoreToBeat = Math.floor((Math.random() * 120) + 19);
-  yourScore = 0;
-  chrystal1();
-  chrystal2();
-  chrystal3();
-  chrystal4();
-  $('#wins').text(wins);
-  $('#losses').text(losses);
-  $('#scoreToBeat').text(scoreToBeat);
-  $('#yourScore').text(yourScore);
+    scoreToBeat = Math.floor((Math.random() * 120) + 19);
+    yourScore = 0;
+    cookie1();
+    cookie2();
+    cookie3();
+    cookie4();
+    $('#wins').text(wins);
+    $('#losses').text(losses);
+    $('#scoreToBeat').text(scoreToBeat);
+    $('#yourScore').text(yourScore);
 
 
 }
@@ -39,34 +39,34 @@ initialGame();
 
 
 
-//Create a function for applying a random value for Chrystal_1 between 1 and 12
-function chrystal1(){
-  Chrystal_1 = Math.floor((Math.random() * 12) + 1);
-  $('#button1').val(Chrystal_1);
+//Create a function for applying a random value for cookie_1 between 1 and 12
+function cookie1(){
+  cookie_1 = Math.floor((Math.random() * 12) + 1);
+  $('#button1').val(cookie_1);
 }
 
-//Create a function for applying a random value for Chrystal_2 between 1 and 12
+//Create a function for applying a random value for cookie_2 between 1 and 12
 
-function chrystal2(){
-  Chrystal_2 = Math.floor((Math.random() * 12) + 1);
-  $('#button2').val(Chrystal_2);
+function cookie2(){
+  cookie_2 = Math.floor((Math.random() * 12) + 1);
+  $('#button2').val(cookie_2);
 }
 
-//Create a function for applying a random value for Chrystal_3 between 1 and 12
+//Create a function for applying a random value for cookie_3 between 1 and 12
 
-function chrystal3(){
-  Chrystal_3 = Math.floor((Math.random() * 12) + 1);
-  $('#button3').val(Chrystal_3);
+function cookie3(){
+  cookie_3 = Math.floor((Math.random() * 12) + 1);
+  $('#button3').val(cookie_3);
 }
-//Create a function for applying a random value for Chrystal_4 between 1 and 12
+//Create a function for applying a random value for cookie_4 between 1 and 12
 
-function chrystal4(){
-  Chrystal_4 = Math.floor((Math.random() * 12) + 1);
-  $('#button4').val(Chrystal_4);
+function cookie4(){
+  cookie_4 = Math.floor((Math.random() * 12) + 1);
+  $('#button4').val(cookie_4);
 }
 
 //Create a function for each additional Game
-$('.chrystal').click(function(){
+$('.cookie').click(function(){
   clickValue = $(this).val();
   yourScore = parseInt(clickValue) + yourScore;
   $('#yourScore').text(yourScore);

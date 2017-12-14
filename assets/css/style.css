@@ -1,0 +1,47 @@
+header {
+  text-align: center;
+}
+
+body {
+  background-image: url("../images/Cookie_Background.jpg");
+  font-weight: bold;
+}
+
+
+.instructions {
+  background-color:rgba(0, 0, 0, 0.6);
+  color: white;
+}
+
+.scores {
+  margin-top: 10px;
+  text-align: center;
+  background-color:rgba(0, 0, 0, 0.6);
+  color: white;
+}
+
+.score {
+  background-color:rgba(0, 0, 0, 0.6);
+  color: white;
+}
+
+.cookies {
+  margin-top: 20px;
+}
+
+.cookie {
+  text-align: center;
+  background-color: transparent;
+}
+
+.score {
+  margin-top: 50px;
+}
+
+button {
+  border-style: hidden;
+}
+
+img {
+  background-color:rgba(0, 0, 0, 0.6);
+}

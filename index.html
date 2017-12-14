@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Crystal Collector Game</title>
+    <title>Dunk the Cookie</title>
 
     <!--Linking to all the style sheets that I will be using  -->
 
@@ -20,118 +20,103 @@
 
 <header>
   <div class="alert alert-primary" role="alert">
-    <h1>Crystal Collector</h1>
+    <h1>Dunk the Cookies</h1>
   </div>
 </header>
 
-<!--Creating a row that will hold the instructions for how to play the game  -->
+  <!--Creating a row that will hold the instructions for how to play the game  -->
 <div class="container">
-  <div class="row">
-    <div class="card">
-      <div class="card-body">
-          <p>You will be given a random number at the start of the game</p>
-          <p>There are four crystals below. By clicking on a crystal, you will be add a specific amount of points to your total score.</p>
-          <p>You win the game by matching your total score to the number. Just like blackjack or The Price is Right, you will lose if your score is above the number.</p>
-          <p>You will not know the value of the crystal until you click on it...and they will change with each game.</p>
-          <p>Best of luck!</p>
+  <div class="container instructions">
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+            <p>You will be given a random number at the start of the game</p>
+            <p>There are four cookies below. By clicking on a cookie, you will be add a specific amount of points to your total score.</p>
+            <p>You win the game by matching your total score to the number. Just like blackjack or The Price is Right, you will lose if your score is above the number.</p>
+            <p>You will not know the value of the cookie until you click on it...and they will change with each game.</p>
+            <p>Best of luck!</p>
       </div>
     </div>
   </div>
-</div>
-<!-- Display four crystals on the screen that will be selectable by the user-->
-<div class="container">
 
-<!-- Display the number of wins and losses -->
+  <!-- Display score on the screen-->
+  <div class="container scores">
 
-<div class="row">
+    <!-- Display the number of wins and losses -->
 
-<!-- Adding a card that will hold the number of wins -->
+    <div class="row">
 
-<div class="col-sm-3">
-  <div class="card">
-    <div class="card-body">
-      <h4 class="card-title">Wins</h4>
-      <p class="card-text border" id="wins"></p>
-    </div>
-  </div>
-</div>
+      <!-- Adding a card that will hold the number of wins -->
 
-<!-- Adding a card that will hold the score to beat -->
+      <div class="col-lg-3 col-md-3 col-sm-12 col-12">
+          <div class="card-body">
+            <h4 class="card-title">Wins</h4>
+            <p class="card-text" id="wins"></p>
+          </div>
+      </div>
 
-<div class="col-sm-6">
-  <div class="card">
-    <div class="card-body">
-      <h4 class="card-title">Score to Beat</h4>
-      <p class="card-text border" id="scoreToBeat"></p>
-    </div>
-  </div>
-</div>
+      <!-- Adding a card that will hold the score to beat -->
 
-<!-- Adding a card that will hold the number of losses -->
-<div class="col-sm-3">
-  <div class="card">
-    <div class="card-body">
-      <h4 class="card-title">Losses</h4>
-      <p class="card-text border" id="losses"></p>
-    </div>
-  </div>
-</div>
+      <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+          <div class="card-body">
+            <h4 class="card-title">Score to Beat</h4>
+            <p class="card-text" id="scoreToBeat"></p>
+          </div>
+      </div>
 
-</div>
-
-<!-- Row for the crystals -->
-
-  <div class="row">
-
-<!-- crystal 1 -->
-
-    <button type="button" class="btn col-lg-3 col-md-3 col-sm-3 col-3 crystal crystal-1" id="button1">
-      <img src="./assets/images/Diamond_1.png" class="rounded float-left" alt="Diamond 1" width = 25%>
-    </button>
-
-<!-- crystal 2 -->
-
-  <button type="button" class="btn col-lg-3 col-md-3 col-sm-3 col-3 crystal crystal-2" id="button2">
-    <img src="./assets/images/Diamond_2.png" class="rounded float-left" alt="Diamond 2" width = 25%>
-  </button>
-
-<!-- crystal 3 -->
-
-  <button type="button" class="btn col-lg-3 col-md-3 col-sm-3 col-3 crystal crystal-3" id="button3">
-    <img src="./assets/images/Diamond_3.png" class="rounded float-left" alt="Diamond 3" width = 25%>
-  </button>
-
-<!-- crystal 4 -->
-
-    <button type="button" class="btn col-lg-3 col-md-3 col-sm-3 col-3 crystal crystal-4" id="button4">
-      <img src="./assets/images/Diamond_4.png" class="rounded float-left" alt="Diamond 4" width = 25%>
-    </button>
-
-
-  </div>
-
-  <!-- Creating a row for your score -->
-
-  <div class="card text-center">
-    <div class="card-header">
-      Your Score
-    </div>
-    <div class="card-body">
-      <h4 class="card-title" id="yourScore"></h4>
+      <!-- Adding a card that will hold the number of losses -->
+      <div class="col-lg-3 col-md-3 col-sm-12 col-12">
+          <div class="card-body">
+            <h4 class="card-title">Losses</h4>
+            <p class="card-text border" id="losses"></p>
+          </div>
+      </div>
     </div>
   </div>
 
-<!--Add a block that will hold the randomly selected value-->
+  <!-- Row for the cookies -->
+  <div class="container cookies">
+    <div class="row">
 
-</div>
+  <!-- cookie 1 -->
+
+      <button type="button" class="col-lg-3 col-md-3 col-sm-6 col-6 cookie cookie-1" id="button1">
+        <img src="./assets/images/Cookie_1.svg"class="rounded" alt="Chocolate Chip Cookie" width = 35%>
+      </button>
+
+  <!-- cookie 2 -->
+
+      <button type="button" class="col-lg-3 col-md-3 col-sm-6 col-6 cookie cookie-2" id="button2">
+        <img src="./assets/images/Gingerbread.png" class="rounded" alt="Ginger Bread Man" width = 35%>
+      </button>
+
+    <!-- cookie 3 -->
+
+      <button type="button" class="col-lg-3 col-md-3 col-sm-6 col-6 cookie cookie-3" id="button3">
+        <img src="./assets/images/sugar_cookie.svg" class="rounded" alt="Sugar Cookies" width = 35%>
+      </button>
+
+    <!-- cookie 4 -->
+
+        <button type="button" class="col-lg-3 col-md-3 col-sm-6 col-6 cookie cookie-4" id="button4">
+          <img src="./assets/images/macaron.png" class="rounded" alt="Macaron" width = 35%>
+        </button>
 
 
+    </div>
+  </div>
 
+      <!-- Creating a row for your score -->
+  <div class="container border score">
+    <div class="row">
+      <div class="text-center col-lg-12 col-md-12 col-sm-12 col-12">
+          Your Score
+        <div class="card-body">
+          <h4 class="card-title" id="yourScore"></h4>
+        </div>
+      </div>
+    </div>
+  </div>
 
-
-
-
-<!-- Displaying the total score that the user has guessed-->
 
 
 <!-- Linking to my javascript file -->
